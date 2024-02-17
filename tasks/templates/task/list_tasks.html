@@ -1,0 +1,18 @@
+<!-- list_tasks.html -->
+
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+  <h2>All Tasks</h2>
+  <ul>
+    {% for task in tasks %}
+      <li>
+        <a href="{% url 'view_task' task.id %}">{{ task.title }}</a>
+        <!-- You can display other task details here -->
+      </li>
+    {% empty %}
+      <li>No tasks found.</li>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock %}
