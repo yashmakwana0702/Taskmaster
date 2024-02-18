@@ -10,7 +10,7 @@ This is a simple Django web application for managing tasks. Users can register, 
 1. Clone the repository:
 
 ```bash
-git clone 
+git clone https://github.com/yashmakwana0702/Taskmaster.git
 cd Taskmaster
 pip install -r requirements.txt
 python manage.py migrate
