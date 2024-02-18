@@ -1,5 +1,29 @@
 # Taskmaster
 
+
+
+This is a simple Django web application for managing tasks. Users can register, log in, create, view, update, and delete tasks.
+
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone 
+cd Taskmaster
+pip install -r requirements.txt
+python manage.py migrate
+
+python manage.py createsuperuser
+python manage.py runserver
+```
+
+#### The application should now be accessible at http://localhost:8000/.
+
+## Test
+```python manage.py test```
+
+
 ## Authentication
 - you can create superuser for Django Admin
 - you can signup and login 

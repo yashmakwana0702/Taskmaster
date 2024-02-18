@@ -114,6 +114,7 @@ def list_tasks(request):
     tasks = Task.objects.all()
     return render(request, 'task/list_tasks.html', {'tasks': tasks})
 
+
 def view_task(request, task_id):
     task = get_object_or_404(Task, id=task_id)
     return render(request, 'task/view_task.html', {'task': task})
